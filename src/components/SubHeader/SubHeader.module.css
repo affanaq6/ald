@@ -1,0 +1,43 @@
+.frame {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;  /* Correctly space out direct children */
+  align-items: center;
+  padding: 2px 30px;
+  color: #000;
+}
+
+.textBlock {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;  /* Ensure the text elements are spread out */
+}
+
+.citation, .caseTitle {
+  font-size: 13px;
+  font-family: 'Abhaya Libre ExtraBold', sans-serif;
+  font-weight: bold;
+  /* Removed justify-content as it does not apply to these elements */
+}
+
+.caseTitle {
+  font-size: 15px; /* Slightly larger font size for emphasis */
+}
+
+.fullScreenButton {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius:10px;
+  padding: 2px 8px;
+  margin-top:2px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* Ensures the button aligns to the right edge of the frame */
+}

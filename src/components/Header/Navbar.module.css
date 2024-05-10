@@ -1,0 +1,42 @@
+.navBarDefault {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 9px 10px 19.1px rgba(0, 0, 0, 0.4);
+  height: 35px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Full width for better layout management */
+}
+
+.frame {
+  display: flex;
+  width: 100%; /* Ensure the frame takes full width of the navbar */
+  justify-content: space-evenly; /* Evenly distribute space among items */
+}
+
+.navButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px 10px; /* Sufficient padding for clickable area */
+  color: #333;
+  transition: color 0.3s, text-decoration-color 0.3s;
+
+  /* Remove default focus outline */
+  &:focus {
+    outline: none;
+  }
+
+  /* Hover state adds an underline */
+  &:hover {
+   color: red /* Underline color */
+  }
+    /* Active state simulates the button being pressed */
+    &:active {
+      transform: scale(0.95); /* Scales down the button to give a "pressed" effect */
+
+  }
+}

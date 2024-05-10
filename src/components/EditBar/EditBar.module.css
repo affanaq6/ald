@@ -1,0 +1,43 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Example background color */
+  width: 100px; /* Adjust width as needed */
+  height: 100%; /* Full height of the sidebar */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  font-size: 24px; /* Larger font size for visibility */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.divider {
+  width: 1px; /* Thin vertical line */
+  height: 30px; /* Adjust based on space between items */
+  background-color: #ccc; /* Divider color */
+}
+.rectangle {
+  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+  position: absolute; /* Positions the rectangle absolutely within a relative container */
+  width: 40px; /* Adjusted width for vertical orientation */
+  height: 450px; /* Specific height, elongated for vertical orientation */
+  background-color: transparent; /* No fill color */
+  border: 1px solid #E34A3E; /* Apply border color and width */
+  border-right: none; /* Removes the right border for vertical alignment */
+  border-radius: 20px; /* Applies border radius to rounded top and bottom */
+  border-top-right-radius: 0; /* Removes the curve on the top-right corner */
+  border-bottom-right-radius: 0;
+}
