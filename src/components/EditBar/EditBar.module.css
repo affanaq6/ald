@@ -1,12 +1,22 @@
 .sidebar {
+  background-color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #f4f4f4; /* Example background color */
-  width: 100px; /* Adjust width as needed */
-  height: 100%; /* Full height of the sidebar */
+  justify-content: center; /* Center items vertically */
+  background-color: transparent; /* Example background color */
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Full height of the viewport */
+  position: absolute; /* Fixed positioning to keep it in view while scrolling */
+  top: 26%; /* Align to the top of the viewport */
+  right: 0; /* Align to the right side of the viewport */
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border-radius:20px 0 0 20px;
+  border-right: none;
+    border-left: 1px solid #e34a3e;
+   border-top: 1px solid #e34a3e;
+  border-bottom: 1px solid #e34a3e;
+  margin-right:10px;
 }
 
 .content {
@@ -26,18 +36,9 @@
 
 .divider {
   width: 1px; /* Thin vertical line */
-  height: 30px; /* Adjust based on space between items */
+  height: 18px; /* Adjust based on space between items */
   background-color: #ccc; /* Divider color */
+  rotate:90deg;
 }
-.rectangle {
-  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
-  position: absolute; /* Positions the rectangle absolutely within a relative container */
-  width: 40px; /* Adjusted width for vertical orientation */
-  height: 450px; /* Specific height, elongated for vertical orientation */
-  background-color: transparent; /* No fill color */
-  border: 1px solid #E34A3E; /* Apply border color and width */
-  border-right: none; /* Removes the right border for vertical alignment */
-  border-radius: 20px; /* Applies border radius to rounded top and bottom */
-  border-top-right-radius: 0; /* Removes the curve on the top-right corner */
-  border-bottom-right-radius: 0;
-}
+
+

@@ -21,7 +21,7 @@ function EditBar() {
         ))}
       </div>
       {/* Rectangle with curved edges */}
-      <div className={styles.rectangle}></div>
+      
     </div>
   );
 }

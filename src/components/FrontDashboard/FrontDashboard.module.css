@@ -1,12 +1,14 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Align children to the start (left) of the container */
   padding: 20px;
   font-size: 16px;
   color: #000;
   font-weight: 400;
+  margin-left:130px;
 }
+
 
 .content {
   display: flex;
@@ -39,11 +41,11 @@
   box-sizing: border-box; /* Ensures padding and border are included in the width/height */
   position: absolute; /* Positions the rectangle absolutely within a relative container */
   width: 800px; /* Specific width */
-  height: 40px; /* Specific height */
+  height: 35px; /* Specific height */
   background-color: transparent; /* No fill color */
   border: 1px solid #E34A3E; /* Apply border color and width */
   border-top: none; /* Removes the top border */
-  border-radius: 30px; /* Specific border radius */
+  border-radius: 25px; /* Specific border radius */
   border-top-left-radius: 0; /* Removes the curve on the top-left corner */
   border-top-right-radius: 0; /* Removes the curve on the top-right corner */
 }

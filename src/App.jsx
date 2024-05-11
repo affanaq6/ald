@@ -1,26 +1,23 @@
 import React from "react";
-import Header from "./components/Header/Header.jsx";
-import SubHeader from "./components/SubHeader/SubHeader.jsx";
-import SubFooter from "./components/SubFooter/SubFooter.jsx";
-import MainFooter from "./components/MainFooter/MainFooter.jsx";
-import FrontDashboard from "./components/FrontDashboard/FrontDashboard";
-import EditBar from "./components/EditBar/EditBar.jsx";  // Import EditBar component
+import Header from "./components/Header/Header";
+import { Route, Routes } from "react-router-dom"; // Import Routes and Route
+import SubFooter from "./components/SubFooter/SubFooter";
+import IndexPage from "./pages/IndexPage";
+import CaseInfoPage from "./pages/CaseInfoPage";
 import "./App.css";
 
 const App = () => {
     return (
-        <div className="App">
+        <>
             <Header />
-            <SubHeader />
-            <FrontDashboard />
-            <EditBar />  
-            <main>
-                <h1>Welcome to My React App</h1>
-                <p>This is the main content of the application.</p>
-            </main>
-            <MainFooter />
+            <Routes>
+                <Route path="/index" element={<IndexPage />} />
+                <Route path="/caseinfo" element={<CaseInfoPage />} />
+                {/* Define more routes as needed */}
+            </Routes>
+
             <SubFooter />
-        </div>
+        </>
     );
 };
 

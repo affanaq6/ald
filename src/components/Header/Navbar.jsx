@@ -60,8 +60,8 @@ const Navbar = () => {
           HELP
         </button>
         <button
-          onClick={handleNavigation("/help")}
-          className={getClassName("/help")}
+          onClick={handleNavigation("/caseinfo")}
+          className={getClassName("/caseinfo")}
         >
           CASE INFO
         </button>

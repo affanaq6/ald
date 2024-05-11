@@ -1,24 +1,3 @@
-/*import React from 'react';
-import styles from "./Header.module.css";
-import Navbar from './Navbar'; // Make sure the import path is correct
-
-const HEADERCOMPONENT = () => {
-  return (
-    <div className={styles.headerComponent}>
-      <section className={styles.headerComponentInner}>
-        <h1 className={styles.titleText}>ALD Online</h1> 
-      </section>
-      <div className={styles.navBardefaultParent}>
-        <Navbar />  
-        
-      </div>
-    </div>
-  );
-};
-
-export default HEADERCOMPONENT;
-*/
-
 import React from "react";
 import * as classes from "./Header.module.css";
 import Navbar from "./Navbar"; // Import Navbar component

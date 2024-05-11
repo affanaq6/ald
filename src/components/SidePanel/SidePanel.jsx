@@ -1,91 +1,79 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './SidePanel.css'; // Import your CSS file for styling
+import React from "react";
+import styles from "./SidePanel.module.css";
 
-const SidePanel = ({ isOpen, onClose, children }) => {
+function SidePanel() {
   return (
-    <div className='body'>
-<div className={`side-panel ${isOpen ? 'open' : ''}`}>
-      <div className="overlay" onClick={onClose}></div>
-      <div className="panel">
-        <button className="close-btn" onClick={onClose}>Close</button>
-        {children}
-
-      <div className="container">
-      <section>
-        <div className="Title">
-          <h3>SUBJECT INDEX</h3>
-        </div>
-        <div className="Contents">
-          <div>
-            <input type="text" id="name" name="name" placeholder="ACT" maxLength="50" required />
+    <div className={styles.sidebar}>
+      <div className={styles.panelOutline}>
+        {" "}
+        {/* Assuming you have an outline style defined */}
+        <div className={styles.subcontainer}>
+          <div className={styles.subitem}>
+            <div className={styles.rectanglesubjectindex}></div>
+            SUBJECT INDEX
           </div>
-          <div>
-            <input type="text" id="section" name="section" placeholder="Section" maxLength="50" required />
+          {/* Adding search bars for ACT, SECTION, SUB SECTION, and SEARCH RESULTS */}
+          <div className={styles.subitem}>
+            <input
+              type="text"
+              placeholder="ACT"
+              className={styles.searchInput}
+            />
           </div>
-          <div>
-            <input type="text" id="sub-section" name="sub-section" placeholder="Sub-Section" maxLength="50" required />
+          <div className={styles.subitem}>
+            <input
+              type="text"
+              placeholder="SECTION"
+              className={styles.searchInput}
+            />
           </div>
-          <div>
-            <p><i>Search Results</i></p>
+          <div className={styles.subitem}>
+            <input
+              type="text"
+              placeholder="SUB SECTION"
+              className={styles.searchInput}
+            />
+          </div>
+          <div className={styles.subitem}>
+            <input
+              type="text"
+              placeholder="SEARCH RESULTS"
+              className={styles.searchInput}
+            />
           </div>
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>TOPIC INDEX</h3>
+        {/* Additional indices are listed outside of the search bar container */}
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          TOPIC INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>CITATION INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          CITATION INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>NOMINAL INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          NOMINAL INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>CASE NO INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          CASE NO INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>JUDGE INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          JUDGE INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>ADVOCATE INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          ADVOCATE INDEX
         </div>
-      </section>
-
-      <section>
-        <div className="Title">
-          <h3>EQUALENT INDEX</h3>
+        <div className={styles.item}>
+          <div className={styles.rectangle}></div>
+          EQUIVALENT INDEX
         </div>
-      </section>
-</div>
-
-</div>
-</div>
-</div>
-
+      </div>
+    </div>
   );
-};
-
-SidePanel.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
-};
+}
 
 export default SidePanel;

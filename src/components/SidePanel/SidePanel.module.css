@@ -1,107 +1,96 @@
-.side-panel {
-  position: fixed;
+.subcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures alignment of all items centrally */
+  position: relative;
+  width: 275px;
+  margin-left:-29px;
+}
+.subitem {
+  font-family: 'Inter', sans-serif; /* Sets the font family to Inter */
+  font-size: 14px; /* Sets the font size to 14 pixels */
+  line-height: 38px; /* Aligns text vertically within the container */
+  font-weight: 600; /* Sets font weight to semi-bold */
+  color: #B22525; /* Sets the text color to a specific shade of red */
+  position: relative; /* Uses relative positioning for layout flexibility */
+  width: 70%; /* The item occupies 75% of its parent's width */
+  height: 25px; /* Fixed height for each item */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  margin-top: 10px; /* Adds space above each item */
+  margin-left: 25px; /* Shifts the item to the right */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures alignment of all items centrally */
+  position: relative;
+  width: 275px; /* Adjust based on your layout requirements */
+}
+
+.item {
+  font-family: 'Inter', sans-serif; /* Sets the font family to Inter */
+  font-size: 14px; /* Sets the font size to 14 pixels */
+  line-height: 38px; /* Aligns text vertically within the container */
+  font-weight: 600; /* Sets font weight to semi-bold */
+  color: #B22525; /* Sets the text color to a specific shade of red */
+  position: relative; /* Uses relative positioning for layout flexibility */
+  width: 75%; /* The item occupies 75% of its parent's width */
+  height: 25px; /* Fixed height for each item */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  margin-top: 10px; /* Adds space above each item */
+  margin-left: 25px; /* Shifts the item to the right */
+}
+.rectangle {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-  pointer-events: none;
+  width: 100%; /* Rectangle takes full width of the item */
+  height: 100%; /* Rectangle takes full height of the item */
+  border: 1px solid #000000;
+  z-index: -1; /* Keeps the rectangle behind the text */
+  border-bottom: none; /* Removes the bottom border */
+  border-radius: 20px; /* Specific border radius */
+  border-bottom-left-radius: 0; /* Removes the curve on the top-left corner */
+  border-bottom-right-radius: 0; /* Removes the curve on the top-right corner */
 }
 
-.side-panel.open {
-  pointer-events: auto;
-}
-
-
-.panel {
-  width: 20vw;
-  height: 100vh;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  position: relative;
-  pointer-events: auto;
-  border-top: 2px solid rgb(240, 99, 5);
-  border-right: 2px solid rgb(240, 99, 5);
-  border-bottom: 2px solid rgb(240, 99, 5);
-  border-top-right-radius: 50px ;
-  border-bottom-right-radius: 50px ;
-}
-
-.close-btn {
+.rectanglesubjectindex {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  background-color: red;
-}
-
-.body {
-  background: white
-  height: 100%;
-  font-family: Arial;
-  font-weight: bold;
-  padding: 10px;
-  border-top: 2px solid rgb(240, 99, 5);
-  border-right: 2px solid rgb(240, 99, 5);
-  border-bottom: 2px solid rgb(240, 99, 5);
-  border-top-right-radius: 50px ;
-  border-bottom-right-radius: 50px ;
-  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%; /* Rectangle takes full width of the item */
+  height: 170px; /* Rectangle takes full height of the item */
+  border: 1px solid #000000;
+  z-index: -1; /* Keeps the rectangle behind the text */
+  border-bottom: none; /* Removes the bottom border */
+  border-radius: 20px; /* Specific border radius */
+  border-bottom-left-radius: 0; /* Removes the curve on the top-left corner */
+  border-bottom-right-radius: 0; /* Removes the curve on the top-right corner */
+  margin-left:-3px; /* Removes the left margin specifically for the SUBJECT INDEX */
+  }
 
 
-
-}
-div{
-  width: 100%;
-  text-align: center;
-  padding: 2px;
+.sidebar {
+  background-color:white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  background-color: transparent; /* Example background color */
+  width: 200px; /* Adjust width as needed */
+  height: 430px; /* Full height of the viewport */
+  position: absolute; /* Fixed positioning to keep it in view while scrolling */
+  top: 25%; /* Align to the top of the viewport */
+  left: -20px; /* Align to the right side of the viewport */
+  border-radius:0 20px 20px 0;
+  border-left: none;
+  border-right: 1px solid #e34a3e;
+  border-top: 1px solid #e34a3e;
+  border-bottom: 1px solid #e34a3e;
+  margin-left:30px;
+}
 
-}
-input{
-  width: 50%;
-}
-
-p{
-   text-align: left;
-   border: 1px solid ;
-   border-radius: 2px;
-   padding: 2px;
-   padding-bottom: 100px;
-   font-size: smaller;
-   color: grey;
-   font-weight: lighter;
-   width:50%;
-}
-.Contents{
-  padding-left: 25%;
-  height: auto;
-
-}
-section{
-   border-top: 1px solid #000;
-   border-left: 1px solid #000;
-   border-right: 1px solid #000;
-   padding:2px;
-   margin:2px;
-  border-top-left-radius: 20px ;
-  border-top-right-radius: 20px ;
-}
-.Title{
-  display:inline-block ;
-  height: 20px;
-  width: auto;
-}
-h3{
-  font-size: small;
-}

@@ -1,0 +1,107 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 20px; /* Reduced min-height */
+  font-size: 11px; /* Reduced font size */
+  color: #000;
+  font-weight: 400;
+  padding: 6px 20px 0; /* Reduced padding */
+  overflow: hidden;
+  margin-left:120px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly; /* Keep content evenly spaced */
+  align-items: center;
+  gap: 80px; /* Reduced gap */
+  white-space: nowrap;
+  margin-top:25px;
+}
+
+.dateRangeSelector {
+  display: flex;
+  gap: 7px; /* Reduced gap */
+  flex: 1;
+}
+
+.dateLabel, .toLabel {
+  font-family: Poppins, sans-serif;
+  font-size:14px;
+  margin: auto 0;
+}
+.allInput{
+  font-family:Poppints, sans-serif;
+  font-size:12px;
+  margin-right:50px;
+}
+
+.dateInput, .allInputContainer {
+  border-radius: 8px; /* Reduced border-radius */
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 110px; /* Reduced width */
+  height: 14px; /* Reduced height */
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  margin-top:0px; /* Reduced margin-top */
+  align-items: center;
+  gap: 0px; /* Reduced gap */
+}
+
+.paginationButton, .prevCaseButton, .searchButton, .padButton, .showButton {
+  font-family: Poppins, sans-serif;
+  margin: auto 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px; /* Reduced font size */
+  padding: 5px 10px; /* Reduced padding */
+}
+
+.searchInput {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 120px; /* Reduced width */
+  height: 14px; /* Reduced height */
+}
+
+.allSelector {
+  display: flex;
+  gap: 40px; /* Reduced gap */
+}
+
+.caseInfo{
+  border-radius: 8px; /* Reduced border-radius */
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 200px; /* Reduced width */
+  height: 14px; /* Reduced height */
+  
+}
+.paginationInfo {
+  border-radius: 7px; /* Reduced border-radius */
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 150px; /* Reduced width */
+  height: 0px; /* Reduced height */
+
+}
+.rectangle {
+  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+  position: absolute; /* Positions the rectangle absolutely within a relative container */
+  width: 800px; /* Specific width */
+  height: 40px; /* Specific height */
+  background-color: transparent; /* No fill color */
+  border: 1px solid #E34A3E; /* Apply border color and width */
+  border-bottom: none; /* Removes the bottom border */
+  border-radius: 30px; /* Specific border radius */
+  border-bottom-left-radius: 0; /* Removes the curve on the top-left corner */
+  border-bottom-right-radius: 0; /* Removes the curve on the top-right corner */
+  bottom: 10px; /* Position from the bottom within the container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal position to truly center based on width */
+}
