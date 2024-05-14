@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./dash.module.css"; // Ensure this import points to the correct file
+import Styles from "./Dash.module.css"; // Ensure this import points to the correct file
 function Dash() {
   
 
