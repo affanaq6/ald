@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Form.module.css";
-import Dash from "./dash";
+import Dash from "./Dash";
 
 import Table from "./Table";
 // Ensure this import points to the correct file
