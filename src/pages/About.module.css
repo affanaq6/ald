@@ -1,0 +1,18 @@
+/* About.module.css */
+
+.container {
+  width: 100vw; /* Full width of viewport */
+  height: 100vh; /* Full height of viewport */
+  background-color: #FFFFFF; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBox {
+  width: 80%; /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+  font-size: 16px;
+}

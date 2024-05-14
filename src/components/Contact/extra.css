@@ -1,0 +1,231 @@
+/*.formcarryContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.formcarryBlock {
+  margin-bottom: 20px;
+}
+
+.formcarryBlock label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formcarryBlock input,
+.formcarryBlock textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.formcarryBlock input:focus,
+.formcarryBlock textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.formcarryBlock textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formcarryBlock button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactSection {
+  display: flex;
+}
+
+.left-container {
+  flex: 1;
+  height: 480px;
+  background-color: #00b4cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.left-container p {
+  font-size: 0.9rem;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+*/
+/* ContactForm.module.css */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contactInfo {
+  position: absolute;
+  width: 226px;
+  height: 50.46px;
+  left: 78px;
+  top: 31px;
+  font-size: 24px; /* Increase font size */
+  line-height: 32px; /* Adjust line height if needed */
+}
+
+.form {
+
+  flex-wrap: wrap;
+  position: absolute;
+  width: 723.35px;
+  height: 223.81px;
+  left: 889px;
+  top: 82px;
+
+
+
+
+}
+
+.formGroup {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: calc(100% - 10px);
+  padding: 10px;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submitButton {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #000000;
+
+}
+
+
+
+//
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Change max-width to 100% */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contactInfo {
+  position: relative; /* Change position to relative */
+  width: 90%; /* Change width to percentage */
+  max-width: 400px; /* Set max-width for better readability */
+  margin: 0 auto; /* Center horizontally */
+  font-size: 24px; /* Increase font size */
+  line-height: 32px; /* Adjust line height if needed */
+  text-align: center; /* Center text */
+}
+
+.form {
+  display: flex; /* Use flexbox for form layout */
+  flex-direction: column; /* Stack form elements vertically */
+  max-width: 100%; /* Change max-width to percentage */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.formGroup {
+  width: 100%; /* Set width to 100% for full width */
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%; /* Set width to 100% for full width */
+  padding: 10px;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submitButton {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjust padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #000000;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .form {
+    flex-direction: row; /* Change flex direction to row for larger screens */
+  }
+  .formGroup {
+    width: 50%; /* Adjust width for larger screens */
+  }
+}
+
+<Route path="/about" element={<About/>}/>
+{handleNavigation("/about")}>ABOUT</button>
+<button onClick=(navbar ,jsx ka hai)

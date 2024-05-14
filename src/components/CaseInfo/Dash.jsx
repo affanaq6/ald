@@ -6,23 +6,21 @@ function Dash() {
 
   return (
   <div className={Styles.container}>
-  <div className={Styles.admin}>
-    
-  </div>
+  
     <div className={Styles.contents}>
       <div className={Styles.admin}>
         <div className={Styles.rectangle}> </div>
         Admin
-        <div> maryum@gmail.com </div>
+        <div> ALD@gmail.com </div>
 
       </div>
     </div>
-    <div className={Styles.contents}>ALD Home</div>
-    <div className={Styles.contents}>Index</div>
-    <div className={Styles.contents}>Case Finder</div>
-    <div className={Styles.contents}>Statues</div>
-    <div className={Styles.contents}>Accounts</div>
-    <div className={Styles.contents}>Settings</div>
+    <button className={Styles.contents}>ALD Home</button>
+    <button className={Styles.contents}>Index</button>
+    <button className={Styles.contents}>Case Finder</button>
+    <button className={Styles.contents}>Statues</button>
+    <button className={Styles.contents}>Accounts</button>
+    <button className={Styles.contents}>Settings</button>
   </div>
   );
 }

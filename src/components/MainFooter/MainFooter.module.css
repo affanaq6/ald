@@ -35,6 +35,8 @@
   display: inline-block;
   min-width: 48px;
   z-index: 1;
+  bottom: 0; /* Stick it to the bottom of the viewport */
+
 }
 .contacts {
   min-width: 74px;
@@ -316,10 +318,23 @@ gap:10px;
   }
   
   .footer {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 120px 54px 84px;
     box-sizing: border-box;
+    line-height: normal;
+    letter-spacing: normal;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-abhaya-libre-extrabold);
+    position: relative; /* Stick it to the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom of the viewport */
   }
+
 }
 
 

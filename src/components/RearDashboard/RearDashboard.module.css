@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 20px; /* Reduced min-height */
+  min-height: auto; /* Reduced min-height */
   font-size: 11px; /* Reduced font size */
   color: #000;
   font-weight: 400;
@@ -21,16 +21,18 @@
   margin-top:25px;
 }
 
-.dateRangeSelector {
-  display: flex;
-  gap: 7px; /* Reduced gap */
-  flex: 1;
-}
-
-.dateLabel, .toLabel {
+.dateLabel{
   font-family: Poppins, sans-serif;
-  font-size:14px;
+  font-size:12px;
   margin: auto 0;
+  margin-right:10px;
+}
+  .toLabel {
+    font-family: Poppins, sans-serif;
+    font-size:12px;
+    margin: auto 0;
+    margin-right:10px;
+    margin-left:10px;
 }
 .allInput{
   font-family:Poppints, sans-serif;
@@ -38,17 +40,33 @@
   margin-right:50px;
 }
 
-.dateInput, .allInputContainer {
+.dateInput {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 100px; /* Reduced width */
+  height: 18px; /* Increased height */
+  cursor: pointer;
+  font-size: 11px;
+  padding: 2px; /* Adjust padding */
+  box-sizing: border-box; /* Include padding in the width and height */
+
+}
+
+.dateInput:hover {
+  background-color: #f0f0f0; /* Add background color on hover */
+}
+
+.allInputContainer {
   border-radius: 8px; /* Reduced border-radius */
   border: 1px solid rgba(0, 0, 0, 1);
   width: 110px; /* Reduced width */
-  height: 14px; /* Reduced height */
+  height: 17px; /* Reduced height */
 }
 
 .footer {
-  position: relative;
+  
   display: flex;
-  margin-top:0px; /* Reduced margin-top */
+  margin-top:2px; /* Reduced margin-top */
   align-items: center;
   gap: 0px; /* Reduced gap */
 }
@@ -68,7 +86,8 @@
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 1);
   width: 120px; /* Reduced width */
-  height: 14px; /* Reduced height */
+  height: 18px; /* Reduced height */
+  padding:1px;
 }
 
 .allSelector {
@@ -80,14 +99,16 @@
   border-radius: 8px; /* Reduced border-radius */
   border: 1px solid rgba(0, 0, 0, 1);
   width: 200px; /* Reduced width */
-  height: 14px; /* Reduced height */
+  height: 18px; /* Reduced height */
+  padding: 2px; /* Adjust padding */
   
 }
 .paginationInfo {
-  border-radius: 7px; /* Reduced border-radius */
+  border-radius: 8px; /* Reduced border-radius */
   border: 1px solid rgba(0, 0, 0, 1);
-  width: 150px; /* Reduced width */
-  height: 0px; /* Reduced height */
+  width: auto; /* Reduced width */
+  height: auto; /* Reduced height */
+  padding: 3px; /* Adjust padding */
 
 }
 .rectangle {

@@ -11,7 +11,11 @@ padding: 20px;
   padding-right: 90px;
 }
 
-.cotents:hover{
+.contents{
+  background-color:black;
+  border: none;
+}
+.contents:hover{
   color: #a54c03;
 }
 

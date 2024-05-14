@@ -1,0 +1,220 @@
+.container {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 35px;
+  left: 84px;
+  top: 32px;
+  font-weight: bold;
+  font-family: "Abhaya Libre ExtraBold";
+}
+
+.searchBar {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  top: 50px;
+  right: -170px;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(590.45px);
+  border-radius: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6f6f6f;
+}
+
+.searchInput {
+  width: 500px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 32px;
+  border: 1px;
+  border-color: black;
+  padding: 25px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin-top:20px;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  fill: #8f8f8f;
+  margin-left: 10px;
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foundResults {
+  position: absolute;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #828282; /* Gray 3 */
+  top:100px;
+  right:95px;
+}
+
+.groupFrame {
+  position: absolute;
+  width: 1440px;
+  height: 195px;
+  left: 0;
+  top: 120px; /* Adjust top position as needed */
+  }
+
+.frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #d1d1d1; /* Fill color */
+
+}
+
+
+.letterV {
+  position: absolute;
+  width: 45px;
+  height: 53px;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #B22525;
+  top: 20px;
+  left: 80px; /* Adjust left position as needed */
+}
+
+
+.judgeColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 190px; /* Adjust the left position */
+}
+
+.judgeColumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 570px; /* Adjust the left position */
+}
+
+.judgeColumn3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 950px; /* Adjust the left position */
+}
+
+.groupFrameY {
+  position: absolute;
+  width: 1440px;
+  height: 195px;
+  left: 0;
+  top: 350px; /* Adjust top position as needed */
+  
+}
+
+.frameY {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Fill color */
+
+}
+
+.letterY {
+  position: absolute;
+  width: 45px;
+  height: 53px;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #B22525;
+  top: 20px;
+  left: 80px; /* Adjust left position as needed */
+}
+
+.judgeColumnY {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 190px; /* Adjust the left position */
+}
+
+.judgeColumn2Y {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 570px; /* Adjust the left position */
+}
+
+.judgeColumn3Y {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust gap between entries */
+  position: absolute;
+  top: 20px;
+  left: 950px; /* Adjust the left position */
+}
+
+.judgeEntry {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.MoreJudgesY {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 188px; /* Adjust as needed */
+  font-size: 14px; /* Adjust as needed */
+  color: black; /* Add color to make it visible */
+  font-weight: bold; /* Add font weight for emphasis */
+}
+
+.MoreJudges {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right:188px; /* Adjust as needed */
+  font-size: 14px; /* Adjust as needed */
+  color: black; /* Add color to make it visible */
+  font-weight: bold; /* Add font weight for emphasis */
+}
+
+
+.arrow {
+  margin-left: 5px;
+}

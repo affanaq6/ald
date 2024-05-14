@@ -2,16 +2,22 @@ import React from "react";
 import styles from "./RearDashboard.module.css";
 
 function RearDashboard() {
-  const dates = ["2023-01-01", "2023-12-31"];
-
   return (
     <main className={styles.main}>
       <header className={styles.header}>
         <div className={styles.dateRangeSelector}>
           <label className={styles.dateLabel}>Date</label>
-          <input className={styles.dateInput} defaultValue={dates[0]} />
+          <input
+            className={styles.dateInput}
+            type="date"
+            placeholder="mm/dd/yyyy"
+          />
           <span className={styles.toLabel}>To</span>
-          <input className={styles.dateInput} defaultValue={dates[1]} />
+          <input
+            className={styles.dateInput}
+            type="date"
+            placeholder="mm/dd/yyyy"
+          />
         </div>
         <div className={styles.allSelector}>
           <div className={styles.allInputContainer}>

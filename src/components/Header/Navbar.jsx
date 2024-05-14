@@ -1,16 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook from react-router-dom
-import styles from "./Navbar.module.css"; // Ensure this points to the correct CSS module file
+import { useNavigate } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
-  // Function to navigate to a path
   const handleNavigation = (path) => () => {
     navigate(path);
   };
 
-  // Function to determine the class name based on active state
   const getClassName = (path) => {
     return window.location.pathname === path
       ? `${styles.navButton} ${styles.active}`
@@ -20,13 +18,20 @@ const Navbar = () => {
   return (
     <div className={styles.navBarDefault}>
       <div className={styles.frame}>
-        <button onClick={handleNavigation("/")} className={getClassName("/")}>
-          HOME
-        </button>
-        <button
-          onClick={handleNavigation("/index")}
-          className={getClassName("/index")}
-        >
+        <div className={styles.dropdown}>
+          <button
+            onClick={handleNavigation("/home")}
+            className={getClassName("/home")}
+          >
+            HOME
+          </button>
+          <div className={styles.dropdownContent}>
+            <button onClick={handleNavigation("/about")}>ABOUT</button>
+            <button onClick={handleNavigation("/contact")}>CONTACT</button>
+            <button onClick={handleNavigation("/help")}>HELP</button>
+          </div>
+        </div>
+        <button onClick={handleNavigation("/index")} className={getClassName("/index")}>
           INDEX
         </button>
         <button
@@ -35,16 +40,10 @@ const Navbar = () => {
         >
           CASE FINDER
         </button>
-        <button
-          onClick={handleNavigation("/statutes")}
-          className={getClassName("/statutes")}
-        >
+        <button onClick={handleNavigation("/statutes")} className={getClassName("/statutes")}>
           STATUTES
         </button>
-        <button
-          onClick={handleNavigation("/articles")}
-          className={getClassName("/articles")}
-        >
+        <button onClick={handleNavigation("/articles")} className={getClassName("/articles")}>
           ARTICLES
         </button>
         <button
@@ -53,11 +52,8 @@ const Navbar = () => {
         >
           JUDGES PROFILE
         </button>
-        <button
-          onClick={handleNavigation("/help")}
-          className={getClassName("/help")}
-        >
-          HELP
+        <button onClick={handleNavigation("/pad")} className={getClassName("/pad")}>
+          PAD
         </button>
         <button
           onClick={handleNavigation("/caseinfo")}

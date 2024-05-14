@@ -1,0 +1,50 @@
+.frame {
+  position: relative;
+  width: 1300px;
+  height: 300px;
+  background-color: black;
+  padding: 0px;
+  margin-top: 50px; /* Bring the frame down */
+  border-radius:30px;
+  margin-left:-60px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-left:60px;
+}
+.bookContainer {
+  display: flex;
+  gap: 20px; /* Adjust the gap between books */
+  margin-top: 20px; /* Add margin-top to create space between title and books */
+  margin-left:60px;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between book image and description */
+}
+
+.bookImage {
+  width: 120px; /* Adjust the width of the book image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.bookDescription {
+  display: flex;
+  flex-direction: column;
+  color:white;
+}
+
+.bookTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px; /* Add margin bottom to create space between title and info */
+}

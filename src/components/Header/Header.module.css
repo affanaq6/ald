@@ -44,6 +44,7 @@ html, body {
   border: none;
   border-radius: 20px;
   font-size: 16px;
+  font-family: 'Abhaya Libre';
   cursor: pointer;
   margin-left: 1px; /* Minimal space between navbar and login button */
   &:hover {

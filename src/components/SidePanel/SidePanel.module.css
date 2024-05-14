@@ -72,7 +72,14 @@
   border-bottom-right-radius: 0; /* Removes the curve on the top-right corner */
   margin-left:-3px; /* Removes the left margin specifically for the SUBJECT INDEX */
   }
-
+.searchInput{
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 93%; /* Rectangle takes full width of the item */
+  height: 93%; /* Rectangle takes full height of the item */
+  border: 1px solid #000000;
+}
 
 .sidebar {
   background-color:white;

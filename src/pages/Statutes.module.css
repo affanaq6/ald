@@ -1,0 +1,133 @@
+.container {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 35px;
+  left: 84px;
+  top: -15px;
+  font-weight: bold;
+  font-family: "Abhaya Libre ExtraBold";
+}
+
+.searchBar {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  top: 0px;
+  right: -170px;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(590.45px);
+  border-radius: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6f6f6f;
+}
+
+.searchInput {
+  width: 500px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 32px;
+  border: 1px;
+  border-color: black;
+  padding: 25px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin-top:20px;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  fill: #8f8f8f;
+  margin-left: 10px;
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foundResults {
+  position: absolute;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #828282; /* Gray 3 */
+  top:80px;
+  left:85px;
+}
+.frame {
+  position: relative;
+  width: calc(100% - 12px); /* Adjust width to match desired width */
+  height: 350px;
+  border: 2px solid black; /* Add border */
+  border-radius: 30px; /* Add border radius */
+  margin: 50px auto 0; /* Align frame horizontally center and bring it down */
+  padding: 0px;
+  top:50px;
+}
+.divider {
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the thickness of the divider */
+  background-color: black; /* Color of the divider */
+  top: 50%; /* Position it vertically in the middle */
+  transform: translateY(-50%); /* Center it vertically */
+}
+
+.textStyles {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 80%; /* Adjust the width as needed */
+  margin-left:50px;
+  
+}
+.pageCounter {
+  display: flex;
+  align-items: center;
+  margin-left:auto;
+  margin-top:50px;
+  justify-content:center;  
+  
+}
+
+.arrow {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4x; /* Add border radius */
+  background-color: transparent; /* Remove background color */
+}
+
+.pageInfo {
+  margin: 0 10px;
+}
+
+.currentPage {
+  font-weight: bold;
+  color: black;
+  padding: 2px 5px; /* Add padding */
+  border: 1px solid black; /* Add border */
+   /* Add border radius */
+  margin-right: 10px; /* Increase the gap between current and total */
+
+  
+}
+
+.arrow:hover {
+  background-color: #f0f0f0; /* Add hover background color */
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Form.module.css";
-import Dash from "./dash";
+import Dash from "./Dash";
 
 import Table from "./Table";
 // Ensure this import points to the correct file
@@ -9,7 +9,7 @@ function Form() {
   return (
     <div className={Styles.Container}>
       <Dash />
-      <div className={Styles.body}>
+      
         <div className={Styles.formContainer}>
           <div className={Styles.formHeader}>
             <h1>
@@ -19,15 +19,15 @@ function Form() {
           <div className="formBody">
             <div className={Styles.row}>
               <div className={Styles.col}>
-                <label>Court Name</label>
+                
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Enter Name"
+                  placeholder="Court Name"
                 />
               </div>
               <div className={Styles.col}>
-                <label>Data</label>
+                
                 <input
                   type="date"
                   className="form-control"
@@ -35,53 +35,53 @@ function Form() {
                 />
               </div>
               <div className={Styles.col}>
-                <label>Judge Name</label>
+                
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Enter Name"
+                  placeholder="Judge Name"
                 />
               </div>
             </div>
             <div className={Styles.row}>
               <div className={Styles.col}>
-                <label>Case Type</label>
+                
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Enter type"
+                  placeholder="Case Type"
                 />
               </div>
               <div className={Styles.col}>
-                <label>Case Number</label>
+               
                 <input
                   type="number"
                   className="form-control"
-                  placeholder="Enter Number"
+                  placeholder="Case Number"
                 />
               </div>
               <div className={Styles.col}>
-                <label>Case Year</label>
+                
                 <input
                   type="year"
                   className="form-control"
-                  placeholder="yyyy"
+                  placeholder="Case Year"
                 />
               </div>
             </div>
             <div className={Styles.row}>
               <div className={Styles.col}>
-                <label>Name of Parties</label>
+                
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Enter Names"
+                  placeholder="Name of Parties"
                 />
               </div>
             </div>
             <div className={Styles.row}>
               <div className={Styles.col}>
-                <label>Citations</label>
+                
                 <input
                   type="text"
                   className="form-control"
@@ -106,14 +106,17 @@ function Form() {
                   placeholder="Enter Date"
                 />
               </div>
-              <div className={Styles.col}>
-                <label>Status</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Remarks"
-                />
-              </div>
+              
+            </div>
+            <div className={Styles.row}>
+            <div className={Styles.col}>
+              <label>Status</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Remarks"
+              />
+            </div>
             </div>
             <div className={Styles.row}>
               <div className={Styles.club}>
@@ -129,11 +132,11 @@ function Form() {
                 <div className={Styles.button1}>🗑</div>
               </div>
             </div>
-            <Table />
+               <Table />
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 

@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contactInfo {
+  position: absolute;
+  width: 210px;
+  height: 50.46px;
+  left: 68px;
+  top: 31px;
+  font-size: 24px; /* Increase font size */
+  line-height: 32px; /* Adjust line height if needed */
+}
+
+.form {
+
+  flex-wrap: wrap;
+  position: absolute;
+  width: 723.35px;
+  height: 223.81px;
+  left: 889px;
+  top: 82px;
+
+
+
+
+}
+
+.formGroup {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: calc(100% - 10px);
+  padding: 10px;
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submitButton {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #000000;
+
+}

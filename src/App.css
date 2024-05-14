@@ -1,15 +1,15 @@
-/* App.css */
-html, body {
+html, body, #root {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensures that the body takes the full height of the viewport */
-    width: 100%; /* Ensures the body takes the full width of the viewport */
 }
 
 .App {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* This ensures the app container takes at least the full height of the viewport */
-    justify-content: space-between; /* Aligns children (content and footer) on the main axis from start to end */
+    min-height: 100vh;
 }
 
+.Content {
+    flex: 1; /* This allows the content to expand and fill remaining space */
+}
