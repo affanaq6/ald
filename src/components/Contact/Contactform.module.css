@@ -1,0 +1,72 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contactInfo {
+    position: absolute;
+    width: 226px;
+    height: 50.46px;
+    left: 200px;
+    top: 31px;
+    font-size: 20px;
+    /* Increase font size */
+    line-height: 30px;
+    /* Adjust line height if needed */
+}
+
+.form {
+    position: relative;
+    width: 40%;
+    /* Adjust the percentage based on your design */
+    max-width: 500px;
+    /* Set a maximum width to prevent it from stretching too much */
+    left: 50%;
+    /* Adjust the left position as needed */
+    top: 350%;
+    /* Adjust the top position as needed */
+    height: 50px;
+    margin-bottom: 40px;
+    /* Add margin to prevent overlap with subfooter */
+}
+
+.formGroup {
+    width: 70%;
+    /* Make each form group take up the full width */
+    margin-bottom: 0px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px);
+    /* Adjust the width based on your design */
+    padding: 0px;
+    border: 0.1px solid #8D8D8D;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submitButton {
+    background-color: #111111;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    /* Adjust padding to fit the button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #000000;
+}
